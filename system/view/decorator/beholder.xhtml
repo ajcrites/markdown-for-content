@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" tal:attributes="class user/bgc|nothing">
+<head>
+   <title tal:content="title" />
+   <tal:block tal:condition="exists:meta" tal:repeat="tag meta"
+      ><meta tal:attributes="name tag/name; content tag/content" />
+   </tal:block
+   ><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" type="text/css" href="/css/everything.css" />
+   <tal:block tal:condition="exists:css" tal:repeat="file css"
+      ><link rel="stylesheet" type="text/css" tal:attributes="href file" />
+   </tal:block>
+   <link tal:replace="" rel="shortcut icon" href="/fyn.com/favicon.ico" type="image/x-icon" />
+   <style>article,aside,footer,header,hgroup,nav,section,details,figure,figcaption,summary{display:block}progress,keygen{display:inline-block}ruby,rt,keygen{text-indent:0}output{display:inline}</style><script>/*<![CDATA[*/a='article aside bdi command details figure figcaption footer header hgroup mark meter nav progress ruby rt rp section time wbr audio embed video source track canvas datalist keygen output summary'.split(' ');for(b in a)document.createElement(a[b])//]]></script>
+</head>
+<body>
+   <!--ALL YOUR SITES ARE BELONG TO US-->
+   <tal:block tal:content="structure body" />
+   <br />
+   <footer class="foot">
+      Copyright &copy; <tal:block tal:content="year" />
+      <br />
+      Created, developed, and maintained by <a href="http://aysites.com/ExplosionPills">Explosion Pills</a>
+   </footer>
+
+   <tal:block tal:condition="exists:js" tal:repeat="file js">
+      <script type="text/javascript" tal:attributes="src file"></script>
+   </tal:block>
+</body>
+</html>
