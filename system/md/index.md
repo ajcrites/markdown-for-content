@@ -31,6 +31,7 @@ it is generally nothing more than formatted text -- the site copy, if you will.
 # Using Markdown for Content
 
 **Note:** This section discusses the reasons why you should use Markdown for web content.  The _how_ is expanded upon below.
+
 ---
 ## Why You Should
 
