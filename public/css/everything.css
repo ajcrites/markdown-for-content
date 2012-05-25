@@ -40,3 +40,9 @@ footer.foot a {
 footer.foot a:hover {
    color: blue;
 }
+#markdown {
+   margin: 0 auto;
+   width: 100ex;
+   text-align: justify;
+   font-family: monospace;
+}

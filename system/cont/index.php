@@ -10,5 +10,8 @@ $dec = new Dec('index');
 $dec->js('index');
 $dec->_title = 'Markdown For Content';
 
+require APP .'/Markdown.php';
+$dec->markdown = Markdown(file_get_contents(APP . '/md/index.md'));
+
 return $dec->execute();
 ?>
